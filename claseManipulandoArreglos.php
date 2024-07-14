@@ -17,7 +17,9 @@ $lista_de_frutas = "fresa,cereza,manzanas,bananas";
 $array_frutas = explode(",", $lista_de_frutas);
 var_dump($arry_frutas);*/
 
-/* implode: Lo contario, pasa un array a string*/
+/* implode: Lo contario, pasa un array a string
 $array_frutas = ["fresa","cereza","manzanas","banana"];
 $lista_de_frutas = implode(",", $array_frutas);
-var_dump($lista_de_frutas);
+var_dump($lista_de_frutas);*/
+
+
