@@ -2,7 +2,7 @@
 
 $Michis = array(
     "Michi1" => array(
-        "nombre" => "MsBombon", 
+        "nombre" => "Ms. Bombón", 
         "ocupación" => "Especialista en pereza",
         "color" => "negro y blanco",
         "comidas" => array(
@@ -11,7 +11,7 @@ $Michis = array(
         )
         ),
     "Michi2" => array(
-        "nombre" => "MsBurbuja", 
+        "nombre" => "Ms. Burbuja", 
         "ocupación" => "Autolimpiadora profesional",
         "color" => "naranja",
         "comidas" => array(
@@ -20,7 +20,7 @@ $Michis = array(
         )
         ),      
     "Michi3" => array(
-        "nombre" => "MsBellota", 
+        "nombre" => "Ms. Bellota", 
         "ocupación" => "Maulladora senior",
         "color" => "gris con rayitas",
         "comidas" => array(
