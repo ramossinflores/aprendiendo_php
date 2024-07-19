@@ -26,19 +26,16 @@ foreach($tiendita_de_cafes as $cafe => $price){
 
 // break y continue*/
 
-/* foreach ($tiendita_de_cafes as $cafe => $price) {
+foreach ($tiendita_de_cafes as $cafe => $price) {
+    echo "He encontrado al café $cafe \n";
     if ($cafe == "Latte"){
         echo "Encontramos a Latte! \n";
-        break;
-    echo "He encontrado al café $cafe \n";
-
+    break;
     }
-} */
-
+} 
+/* 
 foreach ($tiendita_de_cafes as $cafe => $price) {
-    if ($cafe = "Recalentado"){
-        continue;
-        break;
+    if ($cafe == "Recalentado"){
+        continue;}
     echo "El café $cafe es muy rico\n";
-
-    }}
+    }*/
