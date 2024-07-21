@@ -62,6 +62,7 @@ function infinitesum(...$numbers){
 }
 
 infinitesum(8,9,555,66,22);*/
+/*  */
 function freddy(){
     $numero_aleatorio = rand(1, 4);
     $frase_de_freddy ="";
