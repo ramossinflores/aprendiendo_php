@@ -1,10 +1,10 @@
 <?php
 
-function clear() {
-    if(PHP_OS === "WINNT"){
-        system("cls");
+function clear() { // Función para limpiar la pantalla
+    if(PHP_OS === "WINNT"){ // PHP_OS es una constante predefinida de PHP que indica el SO donde se está ejecutando: "Si PHP se ejecuta en Windows, entonces..."
+        system("cls"); // system es una función quee ejecutar un programa externo y muestra su salida. en este caso cls es el comando limppiar consola para la CMD
     } else{
-        system("clear");
+        system("clear"); // Para el resto de los SO, sea Linux o Mac, se limpia con clear.
     }
 }
 
@@ -54,10 +54,14 @@ do{
                                     }
                         }
                             if ($temporal_value == $secret_word) { // Comparo la palabra secreta con el valor anterior. Si no ha cambiado, quiere decir que no se hha sustituido ningún caracter, por tanto hubo un intento fallido.
+                                clear();
                                 echo "Intento fallido 😿 Te quedan ".MAX_ATTEMPS-$attemps." intentos.\n"; // Le indico al usuario cuántos intentos le quedan restanto los intentos con el número máximo de intentos permitidos. 
                                 ++$attemps; // Sumo un intento completado
+                                sleep(2); // Pausa el juego, muestra la pantalla por 2 segundos
+                                clear(); // Limpia pantalla
                             }
                             else {
+                                clear();
                                 echo "¡Bien! 😺 \n";   // Evidentemente, si el valor del entrada no es el mismo de salida, entonces hubo una modificación en la cadena: Es un acierto.
                             }
                             echo $secret_word."\n"; // imprimo la cadena con o sin modificaciones por acierto o desacierto, correspondientemente
@@ -70,14 +74,20 @@ do{
                     // 2da validación de datos de entrada: Inválida. El usuario ha ingresado un carácter no alfabético.
                     else{
                         echo "Caracter inválido 😾 Debes ingresar una letra  \n";
+                        sleep(2);
+                        clear();
                     }
                 }
                 // 1era validación de datos de entrada: Inválida. El usuario ha ingresado más de un carácter.        
                 else{
                     echo "Debes ingresar solo una letra 😾\n";
+                    sleep(2);
+                    clear();
                     }
         }                if($attemps = MAX_ATTEMPS){ // Si el usuario  alcanza el valor máximo de intentos, se le indica que ya se ha terminado el juego
                     echo "Lo siento. Se terminaron los intentos 😿 \n"; 
+                    sleep(2);
+                    clear();
                 }
     $continuar=readline("¿Quieres jugar otra vez? Presiona s/S para continuar o cualquier tecla para salir.\n"); // Se sugiere si se desea o no continuar
     clear();
