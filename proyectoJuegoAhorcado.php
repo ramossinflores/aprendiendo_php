@@ -84,10 +84,11 @@ do{
                     sleep(2);
                     clear();
                     }
-        }                if($attemps = MAX_ATTEMPS){ // Si el usuario  alcanza el valor máximo de intentos, se le indica que ya se ha terminado el juego
-                    echo "Lo siento. Se terminaron los intentos 😿 \n"; 
-                    sleep(2);
-                    clear();
+        }                
+            if($attemps = MAX_ATTEMPS){ // Si el usuario  alcanza el valor máximo de intentos, se le indica que ya se ha terminado el juego
+                echo "Lo siento. Se terminaron los intentos 😿 \n"; 
+                sleep(2);
+                clear();
                 }
     $continuar=readline("¿Quieres jugar otra vez? Presiona s/S para continuar o cualquier tecla para salir.\n"); // Se sugiere si se desea o no continuar
     clear();
